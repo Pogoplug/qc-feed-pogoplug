@@ -1,0 +1,15 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+STOP=01
+
+start() {
+	cd /usr/local/cloudengines
+	stop
+	service_start /usr/local/cloudengines/bin/hbwd /usr/local/cloudengines/bin/hbplug
+}
+
+stop() {
+	cd /usr/local/cloudengines
+	service_stop /usr/local/cloudengines/bin/hbwd
+}

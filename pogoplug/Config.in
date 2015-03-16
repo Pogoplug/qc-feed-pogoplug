@@ -1,0 +1,8 @@
+config BR2_PACKAGE_POGOPLUG
+	prompt "TODO: REPLACE THIS PROMPT"
+	tristate
+	default m if CONFIG_DEVEL
+	help
+	      TODO: ADD THE FIRST PART OF THE HELP TEXT
+	       *
+	      TODO: ADD THE SECOND PART OF THE HELP TEXT
